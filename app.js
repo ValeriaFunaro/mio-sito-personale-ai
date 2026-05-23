@@ -82,7 +82,7 @@
     return `
       <footer class="footer">
         <div class="container">
-          <p class="eyebrow no-dash" style="color: var(--green-soft)">${T.footer.h}</p>
+          <p class="eyebrow no-dash" style="color: var(--coral-soft)">${T.footer.h}</p>
           <h2 class="display">Valeria <i>Funaro.</i></h2>
           <hr class="footer-rule" />
           <div class="footer-bottom">
@@ -129,7 +129,7 @@
             <div class="hero-meta-row">
               <span class="label-mono">${T.meta.year}</span>
               <span class="label-mono">${T.meta.based}</span>
-              <span class="label-mono" style="color: var(--green-deep)">● ${T.meta.status}</span>
+              <span class="label-mono" style="color: var(--coral-deep)">● ${T.meta.status}</span>
             </div>
             <div class="hero-body">
               <div class="hero-headline">
