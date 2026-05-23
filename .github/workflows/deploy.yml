@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages
+
+# Deploy automatico ogni push su main + trigger manuale dalla tab Actions.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Permessi richiesti da actions/deploy-pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Evita deploy concorrenti: se uno è già in corso, lo nuovo aspetta.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Build & deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Carica l'intera root del repo (sito statico, niente build step).
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

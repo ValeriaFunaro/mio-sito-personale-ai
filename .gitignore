@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Editor / config locali
+.vscode/
+.idea/
+.claude/
+
+# Node (se usi npx serve)
+node_modules/
+package-lock.json
+*.log
+
+# Backup
+*.bak
+*~
