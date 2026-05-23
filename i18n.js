@@ -221,7 +221,7 @@ window.PV_I18N = {
       h: "Pensata, disegnata e scritta da Valeria.",
       socials: { ig: "Instagram", li: "LinkedIn", gh: "GitHub" },
       copy: "© 2026 Valeria Funaro · Tutti i diritti riservati",
-      colophon: "Set in Instrument Serif & Geist · Codice scritto a mano, palette decisa a mente."
+      colophon: "Set in Bricolage Grotesque · Codice scritto a mano, palette decisa a mente."
     },
     tweaks: {
       title: "Layout home",
@@ -448,7 +448,7 @@ window.PV_I18N = {
       h: "Thought, designed and written by Valeria.",
       socials: { ig: "Instagram", li: "LinkedIn", gh: "GitHub" },
       copy: "© 2026 Valeria Funaro · All rights reserved",
-      colophon: "Set in Instrument Serif & Geist · Hand-written code, hand-picked palette."
+      colophon: "Set in Bricolage Grotesque · Hand-written code, hand-picked palette."
     },
     tweaks: {
       title: "Home layout",
